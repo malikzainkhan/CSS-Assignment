@@ -1,0 +1,660 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+/* nav bar */
+nav{
+    backdrop-filter: blur(4px);
+    z-index: 10;
+    width: 100vw;
+    height: 5vw;
+    display: flex;
+    padding-left: 2vw;
+    justify-content:space-between;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.182);
+    position: fixed;
+}
+/* logo + nav list */
+.logo_list{
+    display: inline;
+}
+/* logo */
+.logo_list a{
+    text-decoration: none;
+}
+.logo_list img{
+    margin-right: 1vw;
+    position: relative;
+    top: 1vw;
+    width: 3vw;
+    height: 3vw;
+}
+/* navbar heading */
+.logo_list h1{
+    color: rgb(4, 4, 92);
+    padding-right: 3vw;
+    font-size: 1.2vw;
+    font-weight: bold;
+    display: inline;
+}
+/* nav list */
+.logo_list ul{
+    padding-left: 3vw;
+    display: inline;
+}
+.logo_list ul > li{
+    display: inline;
+}
+.logo_list ul  li a{
+    margin-right: 2vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(4, 4, 92);
+    font-size: 1vw;
+}
+.logo_list ul  li a:hover{
+    color: rgb(255, 0, 0);
+}
+/* button + icon list */
+.button_icon_list{
+    padding: 1.5vw 2vw 0 0;
+}
+/* button */
+.button_icon_list button{
+    cursor: pointer;
+    font-size: 1vw;
+    width: 9vw;
+    height: 2vw;
+    margin-right: 2vw;
+    padding: 0.5vw;
+    border-radius: 5vw;
+    background-color: rgb(255, 39, 90);
+    color: white;
+    border: none;
+}
+/* icon list */
+.button_icon_list i{
+    cursor: pointer;
+    font-size: 1.2vw;
+    margin-right: 1vw;
+}
+.button_icon_list i.fa-facebook-f{
+    color: #4267B2;
+}
+.button_icon_list i.fa-twitter{
+    color: rgb(43, 179, 232);
+}
+.button_icon_list i.fa-linkedin-in{
+    color: #0077b5;
+}
+.button_icon_list i.fa-instagram{
+    color: rgb(246, 172, 0);
+}
+
+
+
+/* hero section */
+
+
+
+#hero_section{
+    padding-top: 15vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+}
+/* hero heading */
+.hero_section_headings{
+    padding:15vh 0 0 20vw;
+    width: 48vw;
+    height: auto;
+}
+.hero_section_headings h1{
+    font-size: 2.5vw;
+    color: rgb(4, 4, 92);
+}
+.hero_section_headings > p{
+    margin-top: 3vh;
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.386);
+}
+/* hero button */
+.hero_button{
+    margin-top: 5vh;
+}
+.hero_button button{
+    font-size: 1vw;
+    width: 10vw;
+    height: 3vw;
+    border-radius: 5vw;
+    border: none;
+    background-color: rgb(127, 42, 207);
+    color: white;
+    transition: all 0.15s ease;
+}
+.hero_button button:hover{
+    border: 0.15vw solid rgb(255, 39, 80);
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+.hero_button img{
+    position: relative;
+    top: 1.1vw;
+    width: 3vw;
+    height: 3vw;
+    margin: 0 1vw;
+}
+.hero_button p{
+    font-size: 1vw;
+}
+/* hero section image */
+.hero_section_image img{
+    width: 49vw;
+    height: auto;
+}
+
+
+
+/* cards section */
+
+
+
+#cards_section{
+    padding-top: 4vw;
+    border-top: 2px solid rgba(0, 0, 0, 0.059);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.059);
+    width: 100vw;
+}
+#cards_section >p{
+    text-align: center;
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.386);
+}
+#cards_section h1{
+    text-align: center;
+    margin:3vh 0 0 34vw;
+    width: 32vw;
+    color: rgb(4, 4, 92);
+    font-size: 2vw;
+}
+/* cards  */
+.all_cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 10vh 15vw;
+}
+.card{
+    cursor: pointer;
+    padding: 8vh 1.5vw;
+    width: 18vw;
+    height: auto;
+    margin: 0 1vw;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.29);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.card:hover{
+    transform: scale(1.05);
+    background-color:rgb(255, 39, 90);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.587);
+}
+/* card heading */
+.card h2{
+    text-align: center;
+    font-size: 1.2vw;
+    margin-bottom: 5vh;
+    color: rgb(4, 4, 92);
+    font-weight: 600;
+}
+/* card icon */
+.card >img{
+    margin-left: 3.5vw;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+}
+.card >p{
+    margin-top: 3vh;
+    text-align: center;
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.386);
+}
+/* card bottom view detail */
+.card h3{
+    font-size: 1.1vw;
+    color: rgb(4, 4, 92);
+    text-align: center;
+    margin-top: 5vh;
+    font-weight: 600;
+}
+/* red card */
+.red{
+    background-color:rgb(255, 39, 90) ;
+}
+.red h2{
+    color: white;
+}
+.red >p{
+    color: white;
+}.red h3{
+    color: white;
+}
+
+
+/* About section */
+
+
+
+#about_section{
+    margin: 7vw 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+/* about section image */
+.about_section_image img{
+    width: 45vw;
+}
+/* about section detail description */
+.about_section_description{
+    width: 28vw;
+    margin-right: 19vw;
+}
+/* about section description headings */
+.about_section_description h4,.feature_section_description h4{
+    text-transform: uppercase;
+    font-size: 0.9vw;
+    color: rgba(0, 0, 0, 0.386);
+    margin-bottom: 3vh;
+    font-weight: 400;
+}
+.about_section_description h1,.feature_section_description h1{
+    color: rgb(4, 4, 92);
+    font-size: 2vw;
+}
+.about_section_description > p,.feature_section_description> p{
+    text-align: justify;
+    margin: 4vh 0;
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.386);
+}
+.about_section_description > button{
+    width: 10vw;
+    height: 3vw;
+    font-size: 1vw;
+    border-radius: 5vw;
+    border: none;
+    background-color: rgb(127, 42, 207);
+    color: white;
+    transition: all 0.15s ease;
+}
+.about_section_description > button:hover{
+    border: 0.15vw solid rgb(255, 39, 80);
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+
+
+/* feature section */
+
+
+
+#feature_section{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 5vw 15vw;
+    border-top: 2px solid rgba(0, 0, 0, 0.059);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.059);
+}
+/* feature section detail description including headings paragraph */
+.feature_section_description{
+    width: 30vw;
+    margin-right: 5vw;
+}
+/* in this involved icons and there feature along with heading */
+.feature{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3vw;
+}
+/* icon */
+.feature_image img{
+    margin-right: 2vw;
+    width: 3.3vw;
+    height: 3.5vw;
+    border-radius: 50%;
+}
+.feature_description >h2{
+    font-size: 1.5vw;
+    color: rgb(4, 4, 92);
+}
+.feature_description > P{
+    margin-top: 1vw;
+    line-height: 1.7vw;
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.386);
+}
+/* feature section image */
+.feature_section_image img{
+    width: 30vw;
+}
+
+
+
+/* case section */
+
+
+#case{
+    width: 100vw;
+    margin: 7vw 0;
+}
+#case >p,.get_started_section_description>h4{
+    text-transform: uppercase;
+    font-weight: lighter;
+    padding-left: 15vw;
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.386);
+}
+/* case section heading */
+#case h1, .get_started_section_description h1{
+    padding-left: 15vw;
+    width: 45vw;
+    margin: 1vw 0 2vw 0 ;
+    color: rgb(4, 4, 92);
+    font-size: 2vw;
+}
+/* case section images */
+.case_all_images{
+    padding: 1vw 3vw;
+    display: flex;
+    justify-content: space-between;
+}
+.case_image img{
+    width: 22.5vw;
+    transition: all 0.3s ease;
+}
+.case_image img:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+    filter: brightness(35%);
+}
+
+
+
+
+/*  Get started section*/
+
+
+
+
+#get_started_section{
+    padding-right: 15vw;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid rgba(0, 0, 0, 0.059);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.059);
+}
+/* get sttarted detail description */
+.get_started_section_description{
+    margin-top: 10vw;
+    width: 42vw;
+}
+.get_started_section_description p{
+    padding-left: 15vw;
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.386);
+}
+/* get strated button all buttons */
+.get_started_all_buttons{
+    padding-left: 15vw;
+    display: flex;
+    margin-top: 3vw;
+}
+.button1 > button{
+    width: 10vw;
+    height: 3vw;
+    font-size: 1vw;
+    border-radius: 5vw;
+    border: none;
+    background-color: rgb(127, 42, 207);
+    color: white;
+    transition: all 0.15s ease;
+}
+.button1 > button:hover{
+    border: 0.15vw solid rgb(255, 39, 80);
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+.button2 > a > button{
+    margin-left: 1vw;
+    width: 10vw;
+    height: 3vw;
+    font-size: 1vw;
+    border-radius: 5vw;
+    border: none;
+    background-color: white;
+    color: rgb(255, 39, 80);
+    transition: all 0.15s ease;
+    border: 0.15vw solid rgb(255, 39, 80);
+}
+.button2> a > button:hover{
+    border: none;
+    background-color: rgb(127, 42, 207);
+    color: white;
+    transform: scale(1.05);
+}
+/* get started image */
+.get_started_section_image img{
+    width: 40vw;
+}
+
+
+
+
+/* our work section */
+
+
+
+#our_work{
+    width: 100vw;
+    padding: 3vw 15vw;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.059);
+}
+/* work headings */
+#our_work > h1{
+    margin-top: 1.5vw;
+    font-size: 2.5vw;
+    color: rgb(4, 4, 92);
+    width: 55vw;
+    padding-left: 15vw;
+    text-align: center;
+}
+#our_work >h4 ,#update_news > h4 {
+    margin-top: 3vh;
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.386);
+    text-align: center;
+}
+/* our work cards */
+.our_work_all_cards{
+    display: flex;
+    justify-content: space-between;
+}
+.work_card{
+    width: 19vw;
+    padding: 1vw;
+}
+/* card button */
+.work_card button{
+    margin: 1vw 7vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.183);
+    background-color: white;
+    color: rgb(255, 39, 80) ;
+    font-size: 1vw;
+}
+.work_card button:hover{
+    background-color: rgb(255, 39, 80);
+    color: white;
+}
+.work_card h2{
+    text-align: center;
+    font-size:1.3vw;
+}
+.work_card p{
+    margin-top: 3vh;
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.386);
+    text-align: center;
+}
+.work_card img{
+    width: 3vw;
+    height: 3vw;
+    margin: 2vw 7vw;
+}
+
+
+
+/* news and update section */
+
+
+#update_news{
+    width: 100vw;
+    padding: 3vw 15vw;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.059);
+}
+/* news and update section headings */
+#update_news > h1{
+    font-size: 2.5vw;
+    color: rgb(4, 4, 92);
+    width: 50vw;
+    margin: 1vw 10vw 5vw 10vw;
+    text-align: center;
+}
+/* news and update section all cards */
+.update_news_all_cards{
+    display: flex;
+    justify-content: space-between;
+}
+/* cards */
+.update_news_card{
+    width: 22vw;
+}
+.update_news_card > img{
+    width: 22vw;
+    transition: all 0.3s;
+}
+.update_news_card > img:hover{
+    transform: scale(1.05);
+    filter: brightness(75%);
+}
+.update_news_card > p{
+    margin: 1vw 0;
+    font-size: 1vw;
+    color: rgba(0, 0, 0, 0.386);
+}
+.update_news_card > h2{
+    margin: 2vw 0;
+    font-size: 1.3vw;
+    color: rgb(4, 4, 92);
+}
+.update_news_card > h4{
+    margin: 2vw 0;
+    font-size: 1.1vw;
+    color: rgb(4, 4, 92);
+}
+.update_news_card h4 > span{
+    padding-right: 1vw;
+    position: relative;
+    bottom: 0.3vw;
+    color: rgb(255, 39, 80);
+}
+
+
+
+
+/* footer section */
+
+
+
+#footer_section{
+    width: 100vw;
+    height: auto;
+    padding:7vw 15vw 4vw 15vw;
+    background-color: rgb(20, 2, 43);
+    display: flex;
+    justify-content: space-between;
+}
+/* footer column */
+.footer_column{
+    width: 17.5vw;
+}
+.column2{
+    margin-left: 4vw;
+}
+/* footer logo */
+.footer_logo{
+    position: relative;
+    bottom: 1vw;
+}
+.footer_logo img{
+    position: relative;
+    top: 0.5vw;
+    width: 2vw;
+    height: 2vw;
+    margin-right: 1vw;
+}
+.footer_logo > h2{
+    font-size: 1.1vw;
+    color: white;
+    font-weight: 100;
+}
+.footer_column > h3{
+    font-size: 1vw;
+    color: white;
+    margin-bottom: 1.5vw;
+}
+.footer_column >p{
+    margin: 1vw 0 2vw 0;
+    color: silver;
+    font-size: 1vw;
+}
+.footer_column i{
+    margin-top: 0.5vw;
+    cursor: pointer;
+    font-size: 1.3vw;
+    color: silver;
+    padding: 0.4vw;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+}
+.footer_column i:hover{
+    color: white;
+    background-color:rgb(255, 39, 80) ;
+}
+.footer_column ul > li{
+    list-style-type: none;
+    margin: 0.5vh 0 ;
+}
+.footer_column ul > li > a{
+    text-decoration: none;
+    color: silver;
+    font-size: 0.9vw;
+}
